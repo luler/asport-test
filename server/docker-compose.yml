@@ -4,6 +4,7 @@ services:
   asport-server:
     build: .
     network_mode: host
+    restart: always
     volumes:
       - ./cert:/cert
       - ./server.quick.example.toml:/server.quick.example.toml
