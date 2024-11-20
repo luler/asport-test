@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  asport-server:
+    build:
+      - context: .
+      - dockerfile: server.dockerfile
+    network_mode: host
+    volumes:
+      - ./config:/config
+    command: -c /config/server.quick.example.toml
