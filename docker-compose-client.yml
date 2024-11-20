@@ -3,8 +3,8 @@ version: '3'
 services:
   asport-client:
     build:
-      - context: .
-      - dockerfile: client.dockerfile
+      context: .
+      dockerfile: client.dockerfile
     network_mode: host
     volumes:
       - ./config:/config
