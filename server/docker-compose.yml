@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  asport-server:
+    build: .
+    network_mode: host
+    volumes:
+      - ./cert:/cert
+      - ./server.quick.example.toml:/server.quick.example.toml
+    command: -c /server.quick.example.toml

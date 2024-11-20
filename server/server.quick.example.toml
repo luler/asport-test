@@ -10,11 +10,11 @@ server = "[::]:443"
 # Note: DER and PEM format are supported.
 # You can use acme.sh to get a free certificate.
 # See also: https://acme.sh
-certificate = "/config/fullchain.pem"
+certificate = "/cert/fullchain.pem"
 
 # Path to the private key file.
 # Note: DER and PEM format are supported.
-private_key = "/config/privkey.pem"
+private_key = "/cert/privkey.pem"
 
 # Congestion control algorithm.
 # Default: "cubic"

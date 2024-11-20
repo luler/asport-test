@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  asport-client:
+    build: .
+    volumes:
+      - ./client.quick.example.toml:/client.quick.example.toml
+    command: -c /client.quick.example.toml
